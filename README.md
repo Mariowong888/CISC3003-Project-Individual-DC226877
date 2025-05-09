@@ -13,3 +13,7 @@
 6. Checkout payment
 
 7. See the Order
+
+8. Click the admin of MySQL of Xampp
+
+9. Get the product data of Xampp PHP Server
