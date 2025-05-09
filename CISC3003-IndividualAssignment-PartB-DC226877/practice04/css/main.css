@@ -1,0 +1,107 @@
+body {
+    background: #f8f9ff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(45deg, #6b46c1, #ff7d4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #5a5d72;
+    max-width: 480px;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.form-error {
+    background: #fff0f3;
+    color: #ff3b5c;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-left: 4px solid #ff3b5c;
+}
+
+.form-success {
+    background: #e8fff3;
+    color: #00c781;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-left: 4px solid #00c781;
+}
+
+form {
+    width: 100%;
+    max-width: 360px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(107, 70, 193, 0.08);
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border: 2px solid #e3e7ff;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+form input:focus {
+    border-color: #8a63f2;
+    box-shadow: 0 0 0 4px rgba(138, 99, 242, 0.2);
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(45deg, #6b46c1, #8a63f2);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    width: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(107, 70, 193, 0.3);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1.5rem;
+    }
+    
+    form {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+}
